@@ -63,7 +63,7 @@ number-blocks-applet/
 
 ## 🔗 Live Preview
 
-Example: [View Live](https://number-blocks-demo.netlify.app)
+Example: [View Live](https://wisetutor-task.netlify.app/)
 
 ---
 
