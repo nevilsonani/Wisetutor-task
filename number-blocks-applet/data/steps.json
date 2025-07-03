@@ -1,0 +1,8 @@
+{
+  "steps": [
+    { "id": 0, "text": "Welcome! Let's learn how to build numbers." },
+    { "id": 1, "text": "Start by joining two unit blocks to form a rod of 2." },
+    { "id": 2, "text": "Now join two rods: 2 + 2 = 4" },
+    { "id": 3, "text": "You’ve created a number block of 6!" }
+  ]
+}
