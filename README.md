@@ -68,8 +68,7 @@ Example: [View Live](https://number-blocks-demo.netlify.app)
 ---
 
 ## 📸 Screenshots
-
-> Add screenshots if desired, or include image previews from the `/assets/images/` folder  
+ 
 Example:
 - Logo: `assets/images/block-unit.png`  
 - Background: `assets/images/bg.png`
