@@ -8,49 +8,48 @@
 </head>
 <body>
   <div class="applet-frame">
-
-    <!-- 🔷 Logo -->
-    <div class="logo-bar">
-      <img src="assets/images/block-unit.png" alt="WiseTutor Logo" class="logo" />
+    <div class="main-content">
+      <!-- 🔷 Logo -->
+      <div class="logo-bar">
+        <img src="assets/images/block-unit.png" alt="WiseTutor Logo" class="logo" />
+      </div>
+      <!-- 🌐 Language Toggle -->
+      <div class="lang-toggle">
+        <button onclick="setLanguage('en')">🇬🇧</button>
+        <button onclick="setLanguage('id')">🇮🇩</button>
+        <button onclick="setLanguage('tl')">🇵🇭</button>
+      </div>
+      <!-- 💬 Instructions -->
+      <div class="instructions" id="instructionBox">
+        <span id="instructionText">Welcome! Click "Next" to begin.</span>
+        <button id="speakBtn">🔊</button>
+      </div>
+      <!-- 📊 Progress -->
+      <div class="step-info">
+        <small id="stepProgress">Step 1 of 5</small>
+      </div>
+      <!-- 🧱 Block Display -->
+      <div class="blocks-container" id="blocksContainer"></div>
+      <!-- 🎛️ Slider + Navigation -->
+      <div class="controls">
+        <button id="prevBtn">⬅ Previous</button>
+        <input type="range" min="1" max="5" value="1" id="rodSlider" />
+        <button id="nextBtn">Next ➡</button>
+      </div>
     </div>
-
-    <!-- 🌐 Language Toggle -->
-    <div class="lang-toggle">
-      <button onclick="setLanguage('en')">🇬🇧</button>
-      <button onclick="setLanguage('id')">🇮🇩</button>
-      <button onclick="setLanguage('tl')">🇵🇭</button>
+    <div class="side-cartoon">
+      <img src="assets/images/cartoon.webp" alt="Teacher" class="big-mascot" id="mascotImg" />
     </div>
-
-    <!-- 💬 Instructions -->
-    <div class="instructions" id="instructionBox">
-      <span id="instructionText">Welcome! Click "Next" to begin.</span>
-      <button id="speakBtn">🔊</button>
-    </div>
-
-    <!-- 📊 Progress -->
-    <div class="step-info">
-      <small id="stepProgress">Step 1 of 5</small>
-    </div>
-
-    <!-- 🧱 Block Display -->
-    <div class="blocks-container" id="blocksContainer"></div>
-
-    <!-- 🎛️ Slider + Navigation -->
-    <div class="controls">
-      <button id="prevBtn">⬅ Previous</button>
-      <input type="range" min="1" max="5" value="1" id="rodSlider" />
-      <button id="nextBtn">Next ➡</button>
-    </div>
+    <!-- 🎵 Background Music -->
+    <audio id="bgMusic" src="assets/audio/bg-music.mp3" autoplay loop></audio>
+    <!-- 🔗 Scripts -->
+    <script src="libs/howler.min.js"></script>
+    <script src="scripts/translations.js"></script>
+    <script src="scripts/audio.js"></script>
+    <script src="scripts/ui.js"></script>
+    <script src="data/steps.js"></script>
+    <script src="scripts/main.js"></script>
   </div>
 
-  <!-- 🎵 Background Music -->
-  <audio id="bgMusic" src="assets/audio/bg-music.mp3" autoplay loop></audio>
-
-  <!-- 🔗 Scripts -->
-  <script src="libs/howler.min.js"></script>
-  <script src="scripts/translations.js"></script>
-  <script src="scripts/audio.js"></script>
-  <script src="scripts/ui.js"></script>
-  <script src="scripts/main.js"></script>
 </body>
 </html>
